@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  background-repeat: no-repeat;
+  background-size: cover;
+r  margin: 15pt;
+  background-color: #feffed
+}
+
+/*Adds content after the row class*/
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/*Apply styling to a group of classes*/
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Bell MT" , sans-Serif
+}
+
+#content{
+  text-align: center;
+  font-size: 20px;
+
+}
+a {
+  text-decoration: none;
+}
+
+.header {
+  border: 5px groove;
+  background-color: #a9f4bb;
+  color: #000;
+  padding: 15px;
+  text-align:center;
+}
+
+.menu ul {
+  border-style:outset;
+  text-align: center;
+  list-style-type: none;
+  margin: 50px;
+  padding: 50px;
+
+}
+
+.menu li {
+  padding: 15px;
+  margin-bottom: 7px;
+  background-color: #a9f4bb ;
+  color: #000000;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #e7b960;
+}
+
+.aside {
+  border: groove;
+  background-color: #a9f4bb;
+  padding: 15px;
+  color: #000;
+  text-align: center;
+  font-size: 15px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  border: 5px groove;
+  background-color: #a9f4bb;
+  color: #000;
+  text-align: center;
+  font-size: 20px;
+  padding: 15px;
+  bottom: 0%;
+  position: inherit;
+}
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
